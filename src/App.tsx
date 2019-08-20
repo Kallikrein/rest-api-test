@@ -26,6 +26,13 @@ const App: React.FC = () => {
         <Toolbar>
           Source: {stockState.dataSource} / Request Status:&nbsp;
           {stockState.fetchStatus}
+          {stockState.fetchStatus === "ERROR" ||
+          stockState.fetchStatus === "TIMEOUT" ? (
+            <>
+              <br />
+              Le service est momentanément indisponible
+            </>
+          ) : null}
         </Toolbar>
       </AppBar>
       <Box padding={2}>
