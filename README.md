@@ -14,6 +14,8 @@ Start the API server :
 npm run api
 ```
 
+Open [http://localhost:4000/stocks](http://localhost:3000/stocks) to view it in the browser.
+
 Start the development server :
 
 ```
@@ -22,8 +24,13 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+To test the timeout feature, stop the api server and relaunch it via :
+
+```
+npm run api-delay
+```
+
+Refresh the application to notice the timeout message, and data source beeing the localstorage.
 
 ### `npm test`
 
